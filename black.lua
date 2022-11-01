@@ -162,7 +162,7 @@ end
 if Redis:get(black.."chsource") then
 chsource = Redis:get(black.."chsource")
 else
-chsource = "RallsTeam1"
+chsource = "xxxPP"
 end
 function Reply_Status(UserId,TextMsg)
 local UserInfo = LuaTele.getUser(UserId)
@@ -917,7 +917,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"✜ مرحبا عزيزي في مصنع الحمايه المتطور لسورس ريس \n✜ مبرمج السورس @QQ070","html",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"✜ مرحبا عزيزي في مصنع الحمايه المتطور لسورس ريس \n✜ مبرمج السورس @HH_XT","html",true, false, false, true, reply_markup)
 return false 
 end
 ---making user
@@ -989,8 +989,8 @@ end
 end
 
 ----
-if text == 'المطور الريس' or text == 'مبرمج السورس' or text == 'الريس' then  
-local UserId_Info = LuaTele.searchPublicChat("QQ070")
+if text == 'المطور حسن' or text == 'مبرمج السورس' or text == 'حسن' then  
+local UserId_Info = LuaTele.searchPublicChat("HH_XT")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -1001,11 +1001,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "◜๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒◞\n— — — — — — — — —\n ✜*َdev name➢* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n✜*َbio* : [❲ "..Bio.." ❳]"
+local TestText = "◜ᴍᴇʀᴀ◞\n— — — — — — — — —\n ✜*َdev name➢* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n✜*َbio* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '◜๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒◞', url = "https://t.me/QQ070"}
+{text = '◜ᴍᴇʀᴀ◞', url = "https://t.me/HH_XT"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -1015,10 +1015,10 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '◜๏͈͈͈͈͈͈͈𝐑𝐀𝐈𝐈𝐒◞', url = "https://t.me/QQ070"}
+{text = '◜ᴍᴇʀᴀ◞', url = "https://t.me/HH_XT"}
 },
 {
-{text = '◜ˢᵒᵘʳᶜᵉ ʳᵃᶤᶤˢ𝄮◞', url = "https://t.me/RallsTeam1"},
+{text = '◜ˢᵒᵘʳᶜᵉ X4𝄮◞', url = "https://t.me/xxxPP"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -1028,14 +1028,14 @@ end
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/RallsTeam1/23"
+photo = "https://t.me/xxxPP/8257"
 local T =[[
 The besT sourCe on TeLeGrAm
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'ِّّ◜ˢᵒᵘʳᶜᵉ ʳᵃᶤᶤˢ𝄮◞', url = 't.me/RallsTeam1'}, 
+{text = 'ِّّ◜ˢᵒᵘʳᶜᵉ X4𝄮◞', url = 't.me/xxxPP'}, 
 },
 }
 local msgg = msg.id/2097152/0.5
